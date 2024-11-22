@@ -46,8 +46,7 @@ export const sendContactEmail = async ({ firstName, lastName, email, message }) 
 
     `,
   };
-console.log("mailOptions" , mailOptions)
   // Send the email
-  let e = await transporter.sendMail(mailOptions);
-  console.log("e ", e)
+   await transporter.sendMail(mailOptions);
+
 };
