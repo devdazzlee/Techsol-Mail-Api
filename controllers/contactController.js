@@ -12,5 +12,6 @@ console.log("req.body" , req.body)
     res.status(200).json({ message: 'Your message has been sent successfully!' });
   } catch (error) {
     next(error);
+    console.log("error" , error)
   }
 };
